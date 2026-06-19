@@ -36,15 +36,13 @@ LLM observability platform unifying tracing, evaluation, and cost intelligence i
 Chrome extension delivering streamed, timestamp-cited answers about any YouTube video — first tokens arrive in under 1 second via Groq, across 12+ languages, without leaving the watch page.
 `FastAPI` `Chrome Extension (MV3)` `Pinecone` `Groq (Llama-3.3-70B)` `yt-dlp` `RAGAS`
 
-### 🔎 AI Research Analyst — *Agentic RAG*
-Cited, RAGAS-evaluated answers from private document corpora. Routes ~10–15% of queries to an honest "insufficient evidence" response rather than generating from low-quality context.
+### 🔎 [AI Research Analyst](https://github.com/ammarkhan081/ai-research-analyst) — *Agentic RAG*
+Cited answers from a private document corpus, with a router/grade/rewrite/self-check loop (CRAG + Self-RAG) that catches weak evidence before it reaches the user.
 `LangGraph` `ChromaDB` `BM25 + BGE hybrid retrieval` `Cross-encoder reranking` `Tavily` `MCP` `RAGAS`
-> Private repo — happy to walk through the code on request.
 
-### 🔐 Finance Sovereign Assistant — *On-Prem RAG*
-Finance Q&A running 100% on-premise — zero cloud calls at runtime. QLoRA fine-tuned Mistral 7B with measurably improved domain faithfulness vs. the base model, and compliance guardrails mapped to specific EU AI Act requirements.
+### 🔐 [Finance Sovereign Assistant](https://github.com/ammarkhan081/Finance-Sovereign-Assistant) — *On-Prem RAG*
+Finance Q&A running 100% on-premise — zero cloud calls at runtime. A QLoRA fine-tuned Mistral 7B served locally via Ollama, paired with a 4-stage local retrieval pipeline and compliance guardrails mapped to EU AI Act requirements.
 `Mistral 7B (QLoRA)` `Ollama` `FAISS` `LangGraph` `FastAPI` `RAGAS`
-> Private repo — happy to walk through the code on request.
 
 ### 🧠 GRPO Reasoning Model — *RL Post-Training* `(in progress)`
 Applying Group Relative Policy Optimization — the method behind DeepSeek-R1 — to teach a small open model (Qwen2.5-1.5B) to reason step-by-step on GSM8K, trainable on a single free Colab T4.
