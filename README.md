@@ -1,83 +1,74 @@
-# Hi, I'm Ammar Ayaz 👋
+<!--
+  This file replaces the README in your special profile repo:
+  github.com/ammarkhan081/ammarkhan081
 
-### AI Engineer — Agentic AI · LangGraph · RAG · LLM Infrastructure
+  To use it: open that repo on GitHub, edit README.md, paste this in, commit.
+  Anything wrapped in an HTML comment like this one is invisible once
+  rendered on GitHub — it's just a note for you, safe to leave in place
+  until you've filled in the real value, then delete the comment.
+-->
 
-Final-year Computer Science student building **production-grade autonomous AI systems** — multi-agent orchestration, retrieval pipelines, and LLM automation. I care about making AI reliable enough to run in production, not just in notebooks.
+# Ammar Ayaz
 
-*Currently building agentic RAG systems with hybrid retrieval, guardrails, and observability.*
+**AI Engineer · Agentic Systems · RAG · LLM Production Tooling**
 
----
+I build AI systems that are meant to run in production — not just in demos. Most of what's below ships with tracing, evaluation, and audit logging built in from the start, not added afterward.
 
-## 🚀 Featured Projects
+🟢 Open to full-time AI Engineer roles (remote or on-site) — available October 2026
+🔧 Also taking on select automation projects for businesses — agentic systems, RAG pipelines, on-prem AI
 
-### 🤖 AI Research Analyst — Agentic RAG Assistant
-**[AI Research Analyst](https://github.com/ammarkhan081/ai-research-analyst)** — An agentic RAG assistant that routes between local retrieval and live web search, grades evidence, self-checks answers, and cites every claim. Built with CRAG + Self-RAG patterns.
-`LangGraph` `LangChain` `RAG` `MCP` `FastAPI` `Streamlit` `Tavily` `ChromaDB` `RAGAS`
-
-### 🏦 Finance Sovereign Assistant — RAG + LoRA Financial Assistant
-**[Finance Sovereign Assistant](https://github.com/ammarkhan081/Finance-Sovereign-Assistant)** — A RAG-based financial assistant with hybrid retrieval (BM25 + dense + reranking), LoRA fine-tuned model adapters, guardrails, and a Streamlit UI. Includes evaluation with RAGAS.
-`LangChain` `RAG` `LoRA` `Unsloth` `FAISS` `ChromaDB` `Guardrails` `Docker`
-
-### 🛠️ ASHIA — Agentic AIOps Self-Healing Platform
-**[ASHIA](https://github.com/ammarkhan081/Agentic-AIOps-Platform-Self-Healing-Infrastructure-Agent)** — A closed-loop, 6-agent system that detects, diagnoses, remediates, and learns from infrastructure incidents in real time — with human-in-the-loop approval gates.
-`LangGraph` `FastAPI` `Docker` `Prometheus` `Loki` `Jaeger` `ChromaDB`
-
-### 🧪 AI Evaluation & Reliability Platform
-**[AI Evaluation Platform](https://github.com/ammarkhan081/ai-evaluation-reliability-platform)** — Tooling to evaluate and stress-test LLM/AI systems for reliability before production.
-`Python` `LLM Evaluation` `RAGAS`
-
-### 🎥 YouTube Video Q&A (Enhanced)
-**[YouTube Video Q&A](https://github.com/ammarkhan081/yt-video-qa-enhanced)** — A RAG application that lets users ask questions about YouTube videos and get accurate, context-grounded answers from the transcript.
-`RAG` `LLMs` `Python` `Vector Search`
+<!-- TODO: once your portfolio site is deployed, add the link here, e.g.:
+🌐 Portfolio: https://ammarayaz.dev -->
 
 ---
 
-## 📁 Other Projects
+## Featured Projects
 
-| Project | Description | Tech |
-|---|---|---|
-| **[AI-Based Network Anomaly Detection](https://github.com/ammarkhan081/AI-Based-Network-Anomaly-Detection)** | ML-based network intrusion detection | `Jupyter` `scikit-learn` `pandas` |
-| **[Tweet Sentiment Analysis](https://github.com/ammarkhan081/Tweet-Sentiment-Analysis)** | NLP pipeline for Twitter sentiment classification | `Jupyter` `NLP` `pandas` |
-| **[Cyber Security Indexes Analysis](https://github.com/ammarkhan081/-Cyber-Security-Indexes-Analysis)** | Data analysis of cybersecurity metrics | `Jupyter` `pandas` `matplotlib` |
-| **[Student Grade Prediction](https://github.com/ammarkhan081/Student-Grade-Prediction)** | Predictive model for student performance | `Jupyter` `scikit-learn` |
-| **[EDA](https://github.com/ammarkhan081/EDA)** | Exploratory data analysis projects | `Jupyter` `pandas` `seaborn` |
-| **[Python Mini Projects](https://github.com/ammarkhan081/Python-Mini-Projects)** | Collection of Python utility scripts | `Python` |
-| **[Chatbot Project](https://github.com/ammarkhan081/Chatbot-Project)** | Web-based chatbot interface | `HTML` `JavaScript` |
-| **[Claude AI Engineering Skills Lab](https://github.com/ammarkhan081/claude-ai-engineering-skills-lab)** | AI engineering experiments and learning | `HTML` `AI` |
-| **[Ammar Portfolio](https://github.com/ammarkhan081/ammar-portfolio)** | Personal portfolio website | `TypeScript` `React` |
+### 🤖 [ASHIA — Agentic AIOps Self-Healing Infrastructure](https://github.com/ammarkhan081/Agentic-AIOps-Platform-Self-Healing-Infrastructure-Agent)
+A 6-agent closed-loop platform that detects anomalies across 12 live metrics in under 60 seconds, auto-resolves low-risk incidents without paging, and escalates risky changes for human sign-off — across 11 containerized services.
+`LangGraph` `FastAPI` `React` `Docker` `PostgreSQL` `Redis` `Prometheus` `Loki` `Jaeger` `ChromaDB`
 
----
+### 📊 [AI Evaluation & Reliability Platform](https://github.com/ammarkhan081/ai-evaluation-reliability-platform)
+LLM observability platform unifying tracing, evaluation, and cost intelligence in one pipeline. A 3-stage hallucination cascade handles most evaluations before an LLM judge is ever invoked, keeping evaluation cost low at scale.
+`FastAPI` `TimescaleDB` `OpenTelemetry` `RAGAS` `Celery` `Next.js` `Docker` `Kubernetes`
 
-## 🛠️ Tech Stack
+### 🎬 [YouTube Video Intelligence](https://github.com/ammarkhan081/yt-video-qa-enhanced)
+Chrome extension delivering streamed, timestamp-cited answers about any YouTube video — first tokens arrive in under 1 second via Groq, across 12+ languages, without leaving the watch page.
+`FastAPI` `Chrome Extension (MV3)` `Pinecone` `Groq (Llama-3.3-70B)` `yt-dlp` `RAGAS`
 
-**AI / LLM:**
-`LangGraph` `LangChain` `RAG` `OpenAI/GPT-4o` `Anthropic` `Gemini` `Ollama` `embeddings` `function calling` `MCP` `LoRA` `Unsloth` `Hugging Face`
+### 🔎 AI Research Analyst — *Agentic RAG*
+Cited, RAGAS-evaluated answers from private document corpora. Routes ~10–15% of queries to an honest "insufficient evidence" response rather than generating from low-quality context.
+`LangGraph` `ChromaDB` `BM25 + BGE hybrid retrieval` `Cross-encoder reranking` `Tavily` `MCP` `RAGAS`
+> Private repo — happy to walk through the code on request.
 
-**Backend:**
-`Python` `FastAPI` `Streamlit` `PostgreSQL` `Redis` `ChromaDB` `FAISS` `Pinecone` `BM25`
+### 🔐 Finance Sovereign Assistant — *On-Prem RAG*
+Finance Q&A running 100% on-premise — zero cloud calls at runtime. QLoRA fine-tuned Mistral 7B with measurably improved domain faithfulness vs. the base model, and compliance guardrails mapped to specific EU AI Act requirements.
+`Mistral 7B (QLoRA)` `Ollama` `FAISS` `LangGraph` `FastAPI` `RAGAS`
+> Private repo — happy to walk through the code on request.
 
-**DevOps & Observability:**
-`Docker` `Docker Compose` `GitHub Actions` `OpenTelemetry` `Prometheus` `Grafana` `Loki` `Jaeger`
-
-**ML / Data:**
-`PyTorch` `TensorFlow` `scikit-learn` `pandas` `numpy` `RAGAS` `sentence-transformers` `cross-encoders`
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ammarkhan081&show_icons=true&theme=tokyonight&hide_rank=true" alt="GitHub Stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ammarkhan081&layout=compact&theme=tokyonight" alt="Top Languages" height="165" />
-</p>
+### 🧠 GRPO Reasoning Model — *RL Post-Training* `(in progress)`
+Applying Group Relative Policy Optimization — the method behind DeepSeek-R1 — to teach a small open model (Qwen2.5-1.5B) to reason step-by-step on GSM8K, trainable on a single free Colab T4.
+`GRPO (TRL)` `Unsloth` `Qwen2.5-1.5B` `QLoRA (4-bit)` `GSM8K`
+> Training pipeline and reward design complete — base-vs-trained evaluation in progress.
 
 ---
 
-## 📫 Connect
+## Stack
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ammar_Ayaz-blue?logo=linkedin)](https://linkedin.com/in/ammar-ayaz-980a3b375)
-[![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:ammarkhan9903233@gmail.com)
+**AI & Agent Engineering** — LangGraph · LangChain · RAG · GPT-4o · Embeddings & Semantic Search · Function Calling · Prompt Evaluation · RL Post-Training (GRPO)
+
+**Backend** — Python · FastAPI · PostgreSQL · Redis · REST & WebSockets · ChromaDB · FAISS · Pinecone
+
+**Production & Reliability** — Docker · Docker Compose · GitHub Actions · OpenTelemetry · Prometheus · Loki · Jaeger · Grafana
+
+**ML / Data** — PyTorch · TensorFlow · Hugging Face · TRL / Unsloth · scikit-learn · NLP
+
+**Frontend** — React · Next.js · TypeScript · Tailwind CSS · Streamlit
 
 ---
 
-*⚠️ Disclaimer: AI systems I build are for research and demonstration purposes. They are not substitutes for professional advice in medical, financial, or legal domains.*
+## Get in touch
+
+📧 [ammarkhan9903233@gmail.com](mailto:ammarkhan9903233@gmail.com)
+<!-- TODO: once you claim your custom LinkedIn URL, update the link below -->
+💼 [LinkedIn](https://linkedin.com/in/ammar-ayaz-980a3b375)
