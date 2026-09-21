@@ -63,12 +63,13 @@ An authorization-native assistant where access control is enforced before the mo
 
 `FastAPI` `DuckDB` `sqlglot` `FastEmbed` `FlashRank` `Next.js`
 
-#### [ASHIA: Agentic AIOps Self-Healing Infrastructure](https://github.com/ammarkhan081/Agentic-AIOps-Platform-Self-Healing-Infrastructure-Agent)
-*A six-agent LangGraph pipeline across 11 containerized services.*
-- **Detection:** Z-score analysis over 12 Prometheus metrics, polled every 30 seconds, requiring three consecutive anomalous readings to reduce false positives.
-- **Diagnosis and action:** root-cause analysis correlates Loki logs, Jaeger traces, and ChromaDB incident memory. Low-risk fixes run automatically; medium and high-risk fixes wait for human approval.
+#### [AI Research Analyst: Agentic Corrective RAG](https://github.com/ammarkhan081/ai-research-analyst)
+*A cyclic LangGraph agent that answers questions over a private corpus and grades its own evidence.*
+- **Retrieval:** BM25 and dense BGE embeddings fused with RRF, then cross-encoder reranking.
+- **Correction:** a router chooses between direct answer, retrieval, and web search (Tavily). Retrieved documents are graded (CRAG), and a Self-RAG check forces regeneration when the answer is ungrounded.
+- **Traceability:** every request produces a redacted, structured step trace. Tools are also exposed through an MCP server.
 
-`LangGraph` `FastAPI` `Prometheus` `Loki` `Jaeger` `ChromaDB` `Docker Compose`
+`LangGraph` `ChromaDB` `BGE` `Tavily` `MCP` `RAGAS` `FastAPI`
 
 #### [Sovereign On-Premises Finance Assistant](https://github.com/ammarkhan081/Finance-Sovereign-Assistant)
 *A privacy-first financial assistant that makes no external API calls.*
@@ -77,13 +78,12 @@ An authorization-native assistant where access control is enforced before the mo
 
 `QLoRA` `Ollama` `Mistral 7B`
 
-#### [AI Research Analyst: Agentic Corrective RAG](https://github.com/ammarkhan081/ai-research-analyst)
-*A cyclic LangGraph agent that answers questions over a private corpus and grades its own evidence.*
-- **Retrieval:** BM25 and dense BGE embeddings fused with RRF, then cross-encoder reranking.
-- **Correction:** a router chooses between direct answer, retrieval, and web search (Tavily). Retrieved documents are graded (CRAG), and a Self-RAG check forces regeneration when the answer is ungrounded.
-- **Traceability:** every request produces a redacted, structured step trace. Tools are also exposed through an MCP server.
+#### [ASHIA: Agentic AIOps Self-Healing Infrastructure](https://github.com/ammarkhan081/Agentic-AIOps-Platform-Self-Healing-Infrastructure-Agent)
+*A six-agent LangGraph pipeline across 11 containerized services.*
+- **Detection:** Z-score analysis over 12 Prometheus metrics, polled every 30 seconds, requiring three consecutive anomalous readings to reduce false positives.
+- **Diagnosis and action:** root-cause analysis correlates Loki logs, Jaeger traces, and ChromaDB incident memory. Low-risk fixes run automatically; medium and high-risk fixes wait for human approval.
 
-`LangGraph` `ChromaDB` `BGE` `Tavily` `MCP` `RAGAS` `FastAPI`
+`LangGraph` `FastAPI` `Prometheus` `Loki` `Jaeger` `ChromaDB` `Docker Compose`
 
 ---
 
