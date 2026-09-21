@@ -10,7 +10,7 @@
 ---
 
 ### 🎓 Education
-**B.S. Computer Science (AI)**, University of Engineering & Technology Peshawar, expected 2026
+**B.S. Computer Science (AI)**, University of Engineering & Technology Peshawar, Graduated 2026
 
 ### 🔬 Profile
 - **Research focus:** Selective prediction and verification for retrieval-augmented generation in high-stakes domains.
@@ -33,7 +33,7 @@ My work asks how far deterministic checks (citation verification, contradiction 
 ### 🏆 Flagship Research
 
 #### Verifiable RAG with Selective Prediction for Islamic Finance Compliance (AAOIFI)
-*Research in progress · Repository: [AAOIFI-RAG](https://github.com/ammarkhan081/AAOIFI-RAG)*
+*Completed Stage-1 Prototype · Repository: [AAOIFI-RAG](https://github.com/ammarkhan081/AAOIFI-RAG)*
 
 **Question.** Can a deterministic verification layer stop an LLM from returning uncited or self-contradictory compliance answers, and does that protection hold across languages?
 
