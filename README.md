@@ -48,7 +48,7 @@ flowchart LR
 
 **Design.** A 13-gate deterministic safety layer that intercepts citation failures and logical self-contradictions before an answer reaches the user.  
 **Method.** A 2×2 ablation that isolates the effect of retrieval.  
-**Preliminary findings.** (evaluation set: 32 clause-grounded questions). Jais-2, a bilingual model, showed cross-lingual leakage under strict English-language compliance instructions. Qwen-2.5 passed every gate check. Gate compliance measures mechanical safety, not answer correctness.
+**Preliminary findings (Stage-1 pilot, n=7 clause-grounded questions).** Jais-2-8B, a bilingual model, showed cross-lingual leakage (spontaneous Arabic script in English answers) under a strict English citation prompt. Qwen-2.5-7B produced no unsafe answers: 2/7 answered with citations, 4/7 abstained, and 1/7 (a partial answer mixed with an abstention string) was caught by the self-contradiction gate and escalated. Gate compliance measures mechanical safety, not answer correctness, and n=7 is a proof of concept, not a statistically significant result; scaling the evaluation set is the next step.
 
 ---
 
